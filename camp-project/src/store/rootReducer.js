@@ -2,7 +2,7 @@
 import {combineReducers} from "redux"
 import cartReducer from "./reducers/cartReducer"
 
-const rootReducer = combineReducers({
+const rootReducer = combineReducers({//reducerları birleştirip tek reducer yapar.
     cart: cartReducer
 })
 

@@ -6,6 +6,7 @@ import {Route} from 'react-router'
 import ProductDetail from '../pages/ProductDetail'
 import CartDetail from '../pages/CartDetail'
 import {ToastContainer} from "react-toastify"
+import ProductAdd from '../pages/ProductAdd'
 //router işlemi istenilen componentte yapılabilir.
 
 export default function Dashboard() { //kapsayıcı
@@ -22,6 +23,7 @@ export default function Dashboard() { //kapsayıcı
                         <Route exact path="/products" component={ProductList}/>
                         <Route path="/products/:name" component={ProductDetail}/>
                         <Route exact path="/cart" component={CartDetail}/>
+                        <Route exact path="/product/add" component={ProductAdd}/>
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
